@@ -16,6 +16,6 @@ public class CustomerServiceApplication {
 		SpringApplication.run(CustomerServiceApplication.class, args);
 	}
 
-	public DataSource tcmsDB(){return  new DriverManagerDataSource("jdbc:postgresql://localhost/tcms", null,null);}
+//	public DataSource tcmsDB(){return  new DriverManagerDataSource("jdbc:postgresql://localhost/TCMS", "fr",null);}
 
 }

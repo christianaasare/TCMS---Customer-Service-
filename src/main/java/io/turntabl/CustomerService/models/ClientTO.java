@@ -1,12 +1,12 @@
 package io.turntabl.CustomerService.models;
 
-public class Customer {
+public class ClientTO {
     private String name;
     private String address;
     private String email;
     private String telephone;
 
-    public Customer() {
+    public ClientTO() {
 
     }
 
