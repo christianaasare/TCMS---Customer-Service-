@@ -18,10 +18,18 @@ public class CustomerController {
     @GetMapping("/customer")
     public Customer customer(
             @RequestParam(name = "name",defaultValue = "No Name")
-            String name){
+            String name,
+            @RequestParam(name ="address",defaultValue = "No ad")
+                    String address,
+            @RequestParam(name = "email",defaultValue = "No email")
+                    String email,
+            @RequestParam(name = "telephone",defaultValue = "No number")
+                    String telephone){
         Customer myCustomer = new Customer();
         myCustomer.setName(name);
-        myCustomer.setName(" ");
+        myCustomer.setAddress(address);
+        myCustomer.setEmail(email);
+        myCustomer.setTelephone(telephone);
 
         return myCustomer;
     }
