@@ -2,27 +2,42 @@ package io.turntabl.CustomerService.models;
 
 public class ClientTO {
     private String name;
-    private String address;
+    private String phone;
     private String email;
-    private String telephone;
+    private String address;
 
     public ClientTO() {
-
     }
 
-    public String getName() { return name;}
+    public String getName() {
+        return name;
+    }
 
-    public void setName(String name) {this.name = name;}
+    public void setName(String name) {
+        this.name = name;
+    }
 
-    public String getAddress() {return address;}
+    public String getPhone() {
+        return phone;
+    }
 
-    public void setAddress(String address) {this.address = address;}
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
 
-    public String getEmail() {return email;}
+    public String getEmail() {
+        return email;
+    }
 
-    public void setEmail(String email) {this.email = email;}
+    public void setEmail(String email) {
+        this.email = email;
+    }
 
-    public String getTelephone() {return telephone;}
+    public String getAddress() {
+        return address;
+    }
 
-    public void setTelephone(String telephone) {this.telephone = telephone;}
+    public void setAddress(String address) {
+        this.address = address;
+    }
 }
