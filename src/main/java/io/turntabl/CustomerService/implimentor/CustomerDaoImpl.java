@@ -68,9 +68,22 @@ public class CustomerDaoImpl implements CustomerDao {
                 return ps.executeUpdate();
             }
         });
-
+    }
         @Override
-                public void deleteCustomer
+        public void deleteCustomer(ClientTO customer){
+            final String sql = "delete from customer where customerId=:customerId";
+
+            Map<String, Object> map = new HashMap<String, Object>();
+            map.put("customerId", customer.getCustomerId());
+
+            template.execute(sql, map, new PreparedStatementCallback<Object>() {
+                @Override
+                public Object doInPreparedStatement(PreparedStatement ps)
+                        throws SQLException, DataAccessException {
+                    return ps.executeUpdate();
+                }
+            });
+        }
 
     }
-}
+
