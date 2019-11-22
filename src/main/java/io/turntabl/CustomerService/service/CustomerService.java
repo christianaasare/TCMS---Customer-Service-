@@ -1,11 +1,11 @@
-package io.turntabl.CustomerService.DAO;
+package io.turntabl.CustomerService.service;
 
 import io.turntabl.CustomerService.models.ClientTO;
 
 import java.util.List;
 
-public interface CustomerDao {
-    List<ClientTO> getAll();
+public interface CustomerService {
+    List<ClientTO> getAllCustomers();
 
     void insertCustomer(ClientTO customer);
 
