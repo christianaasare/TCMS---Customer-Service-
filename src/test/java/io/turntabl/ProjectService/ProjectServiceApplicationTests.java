@@ -1,10 +1,10 @@
-package io.turntabl.CustomerService;
+package io.turntabl.ProjectService;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class CustomerServiceApplicationTests {
+class ProjectServiceApplicationTests {
 
 	@Test
 	void contextLoads() {

@@ -1,1 +1,1 @@
-insert into customer(id, name , address ,email) values('1','Jack','USA','jack@gmail.com');
+insert into projects(id, projectName ,description) values('1','Jack','jack@gmail.com');
