@@ -1,0 +1,1 @@
+insert into projects(id, projectName ,description) values('1','Jack','jack@gmail.com');
